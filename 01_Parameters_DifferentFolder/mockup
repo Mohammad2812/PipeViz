@@ -1,0 +1,27 @@
+digraph G {
+  
+  node [style=bold, shape=box];
+	a[label="01_Parameters_DifferentFolder/"];
+	b[label="CSVNormalize", color=deepskyblue, style=filled, fontcolor=white];
+	c[label="01_Parameters_DifferentFolder/abundRaw.normalized.csv"];
+	d[label="Threshold", color=deepskyblue, style=filled, fontcolor=white];
+	e[label="01_Parameters_DifferentFolder/abund.thresholded.csv"];
+	f[label="CSVExtract", color=deepskyblue, style=filled, fontcolor=white];
+	g[label="01_Parameters_DifferentFolder/A/normFileA.csv", color=deepskyblue, style=filled, fontcolor=white];
+	h[label="01_Parameters_DifferentFolder/F/normFileF.csv", color=deepskyblue, style=filled, fontcolor=white];
+	i[label="01_Parameters_DifferentFolder/N/normFileN.csv", color=deepskyblue, style=filled, fontcolor=white];
+	j[label="01_Parameters_DifferentFolder/NC/normFileNC.csv", color=deepskyblue, style=filled, fontcolor=white];
+	k[label="01_Parameters_DifferentFolder/C/normFileC.csv", color=deepskyblue, style=filled, fontcolor=white];
+
+	a -> b;
+	b -> c;
+	c -> d;
+	d -> e;
+	e -> f;
+	f -> g;
+	f -> h;
+	f -> i;
+    f -> j;
+    f -> k;
+
+}
